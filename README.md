@@ -3,7 +3,12 @@
 es version: 2.2.0
 ik version: 1.8.1
 
-Sample Query
+## Sample Query-1
+```
+```
+
+## Sample Query-2
+```
 curl -XGET localhost:9200/locsug-index/_search -d '
 { 
   "query":{
@@ -15,20 +20,28 @@ curl -XGET localhost:9200/locsug-index/_search -d '
     }
   }
 }'
+```
 
-Check Analyzer
+## Check Analyzer
+```
 curl 'http://localhost:9200/_analyze?analyzer=ik_smart&pretty=true' -d '
 {
   "text":"車站"
 }'
+```
 
-Delete index
+## Delete index
+```
 curl -XDELETE http://localhost:9200/locsug-index/
+```
 
-Create new index
+## Create new index
+```
 curl -XPUT http://localhost:9200/locsug-index/
+```
 
-Set index mapping
+## Set index mapping
+```
 curl -XPOST http://localhost:9200/locsug-index/locsug/_mapping -d '
 {
   "locsug": {
@@ -57,3 +70,4 @@ curl -XPOST http://localhost:9200/locsug-index/locsug/_mapping -d '
     }
   }
 }'
+```
