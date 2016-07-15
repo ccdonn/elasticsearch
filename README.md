@@ -1,7 +1,7 @@
 # elasticsearch
 
-es version: 2.2.0
-ik version: 1.8.1
+es version: 2.2.0__
+ik version: 1.8.1__
 
 ## Sample Query-1
 ```
